@@ -3,6 +3,7 @@ import styles from "./style.module.css";
 
 function Search() {
   const [searchStatus, setSearchStatus] = React.useState(false);
+  const inputRef: any = React.useRef();
 
   const onClickSearchIcon = () => {
     setSearchStatus(true);
@@ -10,6 +11,7 @@ function Search() {
 
   const onClickClose = () => {
     setSearchStatus(false);
+    inputRef.current.value = "";
   };
 
   let btnStyle = !searchStatus ? styles.searchBtn : styles.searchBtnHidden
@@ -19,8 +21,8 @@ function Search() {
     <div className={styles.search}>
       <button className={ btnStyle }  onClick={() => onClickSearchIcon()}></button>
       <div className={searchStyle}>
-        <input type="text" className={styles.searchInput} />
-        <button className={styles.searchClose} onClick={() => onClickClose()}></button>
+        <input ref={inputRef} type="text" className={styles.searchInput} />
+        <button  className={styles.searchClose} onClick={() => onClickClose()}></button>
       </div>
     </div>
   );
