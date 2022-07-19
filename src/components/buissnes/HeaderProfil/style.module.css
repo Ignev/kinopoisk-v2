@@ -1,0 +1,67 @@
+.headerProfil{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profile{
+    width: 40px;
+    background: #fff;
+    border-radius: 100%;
+    padding: 5px 10px;
+}
+.profileImage{
+    width: 100%;
+}
+.name{
+    transform: translateX(100%);
+    opacity: 0;
+    font-size: 19px;
+    transition: 0.2s ease;
+}
+.headerProfil:hover .name{
+    transition: 0.2s ease;
+    transform: translateX(0%);
+    opacity: 1;
+}
+.headerModule{
+    width: 200px;
+    height: 220px;
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    z-index: 999;
+    display: none;
+}
+.profilInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.moduleName{
+    color: #000;
+}
+.profileModule{
+    width: 40px;
+    height:40px;
+    background: #fff;
+    border-radius: 100%;
+    padding: 5px 10px;
+    border: 1px solid #000;
+}
+.moduleList{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.listItem{
+    font-size: 18px;
+    color: #000;
+    list-style: none;
+}
