@@ -1,0 +1,91 @@
+.search{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchBtn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    background-image: url(../../../assets/search.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 20;
+    opacity: 1;
+    transition: 0.1s ease;
+}
+.searchBtnHidden{
+    opacity: 0;
+    transition: 0.1s ease;
+}
+.searchBtn::before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.2s ease;
+    opacity: 0;
+}
+.searchBtn::after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    background-image: url(../../../assets/search.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 20;
+    opacity: 0;
+    top: 0;
+    right: 0;
+}
+.searchBtn:hover::before{
+    width: 200px;
+    border-radius: 10px;
+    transition: 0.1s ease;
+    opacity: 1;
+}
+.searchBtn:hover::after{
+    opacity: 1;
+}
+.searchBlockHidden{
+    opacity: 0;
+}
+.searchBlock{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+}
+.searchInput{
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+}
+.searchClose{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    background-image: url(../../../assets/close.svg);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+}

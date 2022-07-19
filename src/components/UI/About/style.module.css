@@ -1,0 +1,6 @@
+.infoItem{
+    display: flex;
+}
+.itemLeft{
+    width: 200px;
+}

@@ -1,0 +1,70 @@
+.root{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.cover{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -100;
+    
+}
+.info{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    color: aliceblue;
+    bottom: -20%;
+    opacity: 0;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+.bull{
+    font-size: 20px;
+}
+.root:hover .info{
+    bottom: 0%;
+    opacity: 1;
+}
+
+.btnAdd{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    color: aliceblue;
+    font-size: 28px;
+    padding: 0px 8px;
+    background: rgba(0,0,0, 1);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.btnRemove{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    color: aliceblue;
+    font-size: 28px;
+    padding: 0px 8px;
+    background: rgba(0,0,0, 1);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s ease;
+    transform: rotate(135deg);
+}
+.root:hover{
+    transform: scale(1.01);
+    transition: all 0.3s ease;
+}
+.root:hover .btnAdd{
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+.root:hover .btnRemove{
+    opacity: 1;
+    transition: all 0.3s ease;
+}

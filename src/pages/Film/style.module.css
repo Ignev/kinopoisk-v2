@@ -1,0 +1,112 @@
+.root{
+    display: flex;
+    margin-bottom: 50px;
+}
+.popup{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+}
+.popupImage{
+    width: 700px;
+}
+.cover{
+    width: 400px;
+    margin-right: 40px;
+}
+.coverImg{
+    width: 100%;
+    border-radius: 10px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.title{
+    font-size: 48px;
+}
+.click{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.rated{
+    display: block;
+    border: 1px solid #333333;
+    color: #3d3838;
+    width: 40px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+.fav{
+    width: 40px;
+    height: 40px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='10' height='14' viewBox='0 0 10 14' xmlns='http://www.w3.org/2000/svg' fill='%23333'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0h10v14l-5-3-5 3V0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-color: #f2f2f2;
+    background-position: center;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+.fav:hover{
+    background-color: #e6e6e6;
+    transition: 0.3s ease;
+    transform: scale(1.05);
+}
+.subtitle{
+    font-size: 32px;
+}
+
+.sliderTitle{
+    margin-bottom: 20px;
+}
+.sliderWrapp{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+    gap: 20px;
+}
+.sliderTitle{
+    font-size: 32px;
+}
+.slider{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.sliderItem{
+    width: 300px;
+    border-radius: 10px;
+}
+.filmPlot{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+    gap: 20px;
+}
+.filmPlotTitle{
+    font-size: 32px;
+}
+.filmPlotText{
+    font-size: 24px;
+}
+.videoWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(128, 125, 125);
+    padding: 100px 0px 20px 0px;
+}
+.video{
+    width: 80%;
+}

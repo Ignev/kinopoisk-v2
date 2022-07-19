@@ -1,0 +1,60 @@
+.singWrapp{
+    width: 100vw;
+    position: fixed;
+    height: 100vh;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.sing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    min-height: 400px;
+    min-width: 400px;
+    position: relative;
+}
+.singClose{
+    width: 20px;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+}
+.singForm{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-around;
+}
+.singLable{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+}
+.singInput{
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+.singCheckbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.singSub{
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
