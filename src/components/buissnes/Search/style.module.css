@@ -18,7 +18,7 @@
     transition: 0.1s ease;
 }
 .searchBtnHidden{
-    opacity: 0;
+    z-index: 1;
     transition: 0.1s ease;
 }
 .searchBtn::before{
@@ -50,7 +50,7 @@
     right: 0;
 }
 .searchBtn:hover::before{
-    width: 200px;
+    width: 300px;
     border-radius: 10px;
     transition: 0.1s ease;
     opacity: 1;
@@ -59,17 +59,20 @@
     opacity: 1;
 }
 .searchBlockHidden{
-    opacity: 0;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: -1;
 }
 .searchBlock{
     position: absolute;
     width: 40px;
     height: 40px;
-    opacity: 1;
+    z-index: 20;
 }
 .searchInput{
     position: absolute;
-    width: 200px;
+    width: 300px;
     height: 40px;
     border-radius: 10px;
     background: #fff;
@@ -77,6 +80,10 @@
     background-repeat: no-repeat;
     position: absolute;
     right: 0;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600px;
+    outline: none;
 }
 .searchClose{
     width: 40px;

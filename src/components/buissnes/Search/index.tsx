@@ -12,10 +12,13 @@ function Search() {
     setSearchStatus(false);
   };
 
+  let btnStyle = !searchStatus ? styles.searchBtn : styles.searchBtnHidden
+  let searchStyle = searchStatus ? styles.searchBlock : styles.searchBlockHidden
+
   return (
     <div className={styles.search}>
-      <button className={!searchStatus ? styles.searchBtn : styles.searchBtnHidden }  onClick={() => onClickSearchIcon()}></button>
-      <div className={searchStatus ? styles.searchBlock : styles.searchBlockHidden}>
+      <button className={ btnStyle }  onClick={() => onClickSearchIcon()}></button>
+      <div className={searchStyle}>
         <input type="text" className={styles.searchInput} />
         <button className={styles.searchClose} onClick={() => onClickClose()}></button>
       </div>
